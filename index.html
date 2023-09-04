@@ -11,9 +11,9 @@ margin: 40px;
 </style>
 </head>
 <body>
-<div style="font-size: large;">"Ibsens ripsbærbusker og andre buskevekster</div>
+<div style="font-size: large;">"Ibsens ripsbaerbusker og andre buskevekster</div>
 <div id="tekstFelt"></div>
-<button onclick="vocalPicker('Ibsens ribsbærbusker og andre buskevekster')">Klikk her</button>
+<button onclick="vocalPicker('Ibsens ribsbaerbusker og andre buskevekster')">Klikk her</button>
     
 <script>
 function vocalPicker(tekst){
@@ -23,10 +23,6 @@ let iCounter = 0;
 let oCounter = 0;
 let uCounter = 0;
 let yCounter = 0;
-let æCounter = 0;
-let øCounter = 0;
-let åCounter = 0;
-
 
 for(let index=0; index<=tekst.length; index++){
 let bokstaver = tekst.charAt(index);
@@ -43,13 +39,6 @@ break;
 case 'u': uCounter++;
 break;
 case 'y': yCounter++;
-break;
-case 'æ': æCounter++;
-break;
-case 'ø': øCounter++;
-break;
-case 'å': åCounter++;
-
 
 }
 }
@@ -60,9 +49,7 @@ Antall i = ${iCounter}; <br>
 Antall o = ${oCounter}; <br>
 Antall u = ${uCounter}; <br>
 Antall y = ${yCounter}; <br>
-Antall æ = ${æCounter}; <br>
-Antall ø = ${øCounter}; <br>
-Antall å = ${åCounter}; <br>
+
 ` 
 }
 </script>
